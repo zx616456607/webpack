@@ -4,7 +4,6 @@ const prodModule = require('./webpack-config/prod')
 let finalModule = {}
 
 let ENV = process.env.NODE_ENV
-console.log(ENV, '------env')
 switch (ENV) {
   case 'dev':
     finalModule = devModule
